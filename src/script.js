@@ -47,7 +47,12 @@ let increament = (id)=>{
         })
         calculation();
     }else{
-        search.item+=1;
+        if(search.item<50){
+            search.item+=1;
+        }else{
+            alert("Maximum 50 pieces at a time!")
+        }
+        
         update(selectedItem,search.item);
         calculation();
     }
