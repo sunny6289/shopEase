@@ -58,7 +58,11 @@ let increament = (id)=>{
         })
         calculation();
     }else{
-        search.item+=1;
+        if(search.item < 50){
+            search.item+=1;
+        }else{
+            alert("Maximum 50 pieces at a time!")
+        }
         generateCartItems();
         update(selectedItem,search.item);
         calculation();
@@ -115,6 +119,9 @@ let totalAmnt = ()=>{
         }).reduce((x,y) => x+y,0);
         label.innerHTML = `
             <h2>Total amount : <i class="bi bi-currency-rupee"></i> ${amount}</h2>
+            <a href="index.html">
+            <button class="home-btn">Back to Home</button>
+            </a>
             <button onclick="clearCart()" class="clear-cart">Clear cart</button>
         `
     }else{
