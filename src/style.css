@@ -293,7 +293,15 @@ a{
     font-weight: 550;
     padding: 0 5px;
 }
-
+.home-btn{
+    padding: 4px 10px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .clear-cart{
     padding: 4px 10px;
     background-color: rgb(195, 0, 0);
@@ -304,17 +312,5 @@ a{
     cursor: pointer;
 }
 .clear-cart:hover{
-    filter: brightness(110%);
-}
-.check-out{
-    padding: 4px 10px;
-    background-color: green;
-    color: #fff;
-    border: none;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.check-out:hover{
     filter: brightness(110%);
 }
